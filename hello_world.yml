@@ -4,4 +4,4 @@
   tasks:
     - name: Display Username
       debug:
-        msg: "The username is: {{ CUSTOM_VAR }}"
+        msg: "The username is: {{ lookup('env', 'CUSTOM_VAR') }}"
